@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<script language="JavaScript" src="lanterna.js"></script>
+
+	<!-- Definição do style da lantera-->
+	<style type="text/css">
+	/* style da bateria*/
+		#tempo {
+			text-align: center;
+			font:bold 28pt arial;
+			display: block;
+			margin: 50px auto;
+			padding: 30px;
+			background-color: #01DF01;
+			width: 150px;
+			border-radius: 6px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+		}
+		/* style da estado da bateria */
+		#estado{
+			text-align: center;
+			font:bold 10pt arial;
+			display: block;
+			margin: 50px auto;
+			padding: 30px;
+			background-color: #FFFFFF;
+			width: 150px;
+			border-radius: 6px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+		}
+		/* style dos botões a partir da classe */
+		.btn{
+
+			margin: 0px 3px;
+			width: 150px;
+			border-radius: 6px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+		}
+		#lanterna{
+			border: 1px solid black; 
+			padding: 50px 10px 10px 10px; 
+			margin: 30px auto; 
+			background: #848484; 
+			width: 300px;
+		}
+		</style>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- Definição das DIV's -->
+	<div class="col-8" id="lanterna"> 
+		<div id="tempo">100%</div>
+		<div id="estado">DESLIGADA</div>
+		<div class="col-12" style="text-align: center;">
+
+
+			<!-- Definição dos botões -->
+			<button type="button"  class="btn btn-danger" name="desliga" id="desliga" onclick="stop();">DESLIGA</button>
+		</div><br>
+		<div class="col-12" style="text-align: center;">
+			<button type="button" class="btn btn-success" name="liga" id="liga" onclick="start();">LIGA</button>
+		</div><br>
+		<div class="col-12" style="text-align: center;">
+			<button type="button" class="btn btn-warning" name="trocaBateria
+			" id="trocaBateria" onclick="reinicia();">TROCA BATERIA</button>
+		</div><br>
+	</div>
+</div>
+
+</body>
+</html>﻿
+
